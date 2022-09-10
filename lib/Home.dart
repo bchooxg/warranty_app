@@ -13,12 +13,8 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
   final List<Widget> _cardList = [
-    Card(
-        child: ListTile(
-            title: Text('Playstation 5'),
-            subtitle: Text('10-Sep-2022'),
-            trailing: Text('761 Days'),
-            onTap: () {})),
+    itemCard(title: 'PS5'),
+    itemCard(title: 'Xbox')
   ];
 
   void _incrementCounter() {
